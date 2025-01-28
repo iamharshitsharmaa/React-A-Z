@@ -1,0 +1,78 @@
+.home__page {
+  .home__text-zone {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 40%;
+    max-height: 90%;
+    transform: translateY((-50%));
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 56px;
+    font-family:'General Sans', sans-serif ;
+    font-weight: 400 ;
+    line-height: 53px;
+    color: #fff;
+
+    &::before {
+      content: '<h1>';
+      position: absolute;
+      left: -15px;
+      margin-top: -40px;
+      font-family: 'Pencerio', cursive;
+      font-size: 18px;
+      color: #ffd700;
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: '</h1>';
+      position: absolute;
+      margin: 18px 20px 0 0;
+      font-size: 18px;
+      font-family: 'Pencerio', cursive;
+      color: #ffd700;
+      opacity: 0.6;
+      animation: fadeIn 1s 1.7s backwards;
+    }
+    
+    img {
+      width: 32px;
+      height: auto;
+      margin-left : 20px;
+      opacity: 0;
+      animation: rotateIn 1s 1.4s linear both;
+    }
+  }
+}
+
+h2 {
+  margin-top: 20px;
+  color: #8d8d8d;
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  animation: fadeIn 1s 1.8s backwards;
+}
+
+.flat-button {
+  color: #ffd700;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #ffd700;
+  margin-top: 25px;
+  float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #ffd700;
+    color: #333333;
+  }
+}

@@ -1,0 +1,61 @@
+// Variables
+$primary-color: #ffd700;
+$font-satoshi: 'Satoshi', sans-serif;
+$font-general: 'General Sans', sans-serif;
+$font-pencerio: 'Pencerio', cursive;
+
+// Import External Styles and Animations
+@import 'animate.css';
+
+
+
+// Basic Styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px for easier calculations
+}
+
+body {
+  margin: 0;
+  font-family: $font-satoshi;
+  font-weight: 300;
+  font-size: 1.1rem; // Matches 11px in rem
+  line-height: 1.4;
+  color: #444;
+  background-color: #022c43;
+  overflow: hidden;
+  display: block;
+}
+
+input,
+textarea {
+  font-family: $font-satoshi;
+}
+
+// Loader Styling
+.loader-active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  animation: fadeOut 1s 1s forwards;
+}
+
+// Animation (Add this if not defined in imported styles)
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
